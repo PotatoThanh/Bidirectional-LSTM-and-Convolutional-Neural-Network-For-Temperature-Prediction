@@ -10,6 +10,6 @@ I use weather data of Ulsan, Korea from 1980 to 2018 to predict temperature.
 - tensorboard --logdir=/logs
 # Note: You can only use it for research purposes.
 <p align="center">
-  <img src="model.png" width="850"/>
+  <img src="model.png" width="800"/>
 </p>
 

@@ -58,11 +58,11 @@ def BLSTM_model(input_shape):
         conv1 = AveragePooling1D(2)(conv1)
 
     with tf.name_scope('LSTM_forward'):
-        net1 = LSTM(100, go_backwards=False)(conv1)
+        net1 = Bidirectional(LSTM(100, go_backwards=False))(conv1)
         net1 = Dropout(0.3)(net1)
 
     with tf.name_scope('LSTM_backward'):
-        net2 = LSTM(100, go_backwards=True)(conv1)
+        net2 = Bidirectional(LSTM(100, go_backwards=True))(conv1)
         net2 = Dropout(0.3)(net2)
 
     with tf.name_scope('Dense_100'):

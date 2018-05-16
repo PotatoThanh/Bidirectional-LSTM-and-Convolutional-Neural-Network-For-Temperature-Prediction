@@ -44,7 +44,7 @@ model = BLSTM_model(input_shape)
 model.compile(optimizer=keras.optimizers.Adam(1e-4), loss=keras.losses.mean_squared_error)
 
 # load weights
-ckpt_path = 'trained/checkpoint_/weights.1638-0.00.h5'
+ckpt_path = 'trained/checkpoint_/weights.214-0.00.h5'
 model.load_weights(ckpt_path)
 
 # evaluate

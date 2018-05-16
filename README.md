@@ -8,7 +8,7 @@ I use weather data of Ulsan, Korea from 1980 to 2018 to predict temperature.
 - python test.py
 # You can visualize your training process using Tensorboard
 - tensorboard --logdir=/logs
-# Note: You can only use it for research purposes.
+# Note: You can only use it for research purposes. If you want to use for your publication(s), please contact me to avoid confliction.
 <p align="center">
   <img src="model.png" width="800"/>
 </p>

@@ -13,7 +13,7 @@ NUM_VAL = config.NUM_VAL
 def get_data(file_path):
     # IMPORT DATA
     data = []
-    with open(file_path,'rb') as csvfile:
+    with open(file_path,'r') as csvfile:
         spamreader = csv.reader(csvfile, delimiter = '\t')
         flag_1st = True
         for row in spamreader:
